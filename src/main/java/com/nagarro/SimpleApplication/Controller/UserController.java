@@ -18,12 +18,10 @@ public class UserController {
 
  private List<String> users = new ArrayList<>();
 
- @GetMapping
- public List<String> getUsers() {
-     System.out.println("WELCOME");
-     return users;
- }
-
+ @GetMapping("/hello")
+    public String hello() {
+        return "Hello from Spring Boot!";
+    }
  @PostMapping
  public String addUser(@RequestBody String user) {
      users.add(user);
