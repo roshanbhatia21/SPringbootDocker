@@ -20,6 +20,7 @@ public class UserController {
 
  @GetMapping
  public List<String> getUsers() {
+     System.out.println("WELCOME");
      return users;
  }
 
